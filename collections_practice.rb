@@ -23,5 +23,14 @@ def sort_array_desc(array)
 end
 
 def sort_array_char_count(array)
-
+  i = 0
+  arrayy = []
+  array.each do |thing|
+    thing[i].length
+    arrayy << thing[i]
+    i += 1
+  end
+  arrayy.sort do |a, b|
+    a <=> b
+  end
 end
