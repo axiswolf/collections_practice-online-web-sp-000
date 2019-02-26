@@ -31,3 +31,13 @@ end
 def reverse_array(integers)
   return integers.reverse
 end
+
+def kesha_maker(strings)
+  kesha = []
+  strings.each do |blah|
+    blah = blah.split ""
+    blah[2] = "$"
+    kesha << blah.join
+  end
+  kesha
+end
