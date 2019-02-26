@@ -11,26 +11,9 @@ def sort_array_asc(array)
 end
 
 def sort_array_desc(array)
-  array.sort do |a, b|
-    if a == b
-      0
-    elsif a > b
-      -1
-    elsif a < b
-      1
-    end
-  end
+  array.sort do {|a, b| b <=> a}
 end
 
 def sort_array_char_count(array)
-  i = 0
-  arrayy = []
-  array.each do |thing|
-    thing[i].length
-    arrayy << thing[i]
-    i += 1
-  end
-  arrayy.sort do |a, b|
-    a <=> b
-  end
+  array.sort {|a,b| a.length <=> b.length}
 end
