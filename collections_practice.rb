@@ -7,6 +7,7 @@ def sort_array_asc(array)
     elsif a > b
       1
       # a <=> b
+    end
 end
 
 def sort_array_desc(array)
