@@ -22,3 +22,12 @@ def swap_elements(elements)
   elements[1], elements[2] = elements[2], elements[1]
   return elements
 end
+
+def swap_elements_from_to(array, index, destination_index)
+  array[index] = array[destination_index]
+  return array
+end
+
+def reverse_array(integers)
+  return integers.reverse
+end
