@@ -1,5 +1,5 @@
 def sort_array_asc(array)
-  array.sort do |a, b|
+  array.each do |a, b|
     if a == b
       0
     elsif a < b
